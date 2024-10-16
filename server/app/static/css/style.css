@@ -1,0 +1,56 @@
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-area {
+    width: 45%;
+    border: 2px solid #0097a7;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.answ {
+    width: 45%;
+    border: 2px solid #0097a7;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.text-area::before {
+    content: "Введите ваш запрос...";
+    color: #b0bec5;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    pointer-events: none;
+}
+
+input[type="inttext"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#txtAntwort {
+    ont-weight: bold;
+    color: #00796b;

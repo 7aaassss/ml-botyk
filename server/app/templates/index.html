@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="text-area">
+            <input type="inttext" id="txt1" onchange="ajaxRequest(this.value)">
+        </div>
+        <div class="answ">
+            <span id="txtAntwort"></span>
+        </div>
+    </div>
+</body>
+</html>
